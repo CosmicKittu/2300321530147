@@ -51,3 +51,26 @@ DELETE /notifications/:id
 
 # stage 2
 
+
+
+## Database Choice
+
+I have chosen SQLite as the persistent storage solution.
+
+Reasons:
+
+- Lightweight and easy to set up.
+- Does not require a separate database server.
+- Suitable for small to medium-sized applications.
+- Stores data persistently in a local database file.
+- Ideal for rapid development and evaluation purposes.
+
+## Database Schema
+
+```sql
+id TEXT PRIMARY KEY,
+type TEXT NOT NULL,
+message TEXT NOT NULL,
+is_read INTEGER DEFAULT 0,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+```
