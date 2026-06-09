@@ -1,3 +1,13 @@
+# how to run this application
+
+- make a .env file and add credential in notification_app_be
+- run npm install
+- run node index.js 
+
+
+
+
+
 # Stage 1
 ## Api end point
 ```
@@ -13,7 +23,7 @@ DELETE /notifications/:id
 
 ### GET    /notifications
 
-```
+```json
 {
 	"notifications": [
 		{
@@ -26,3 +36,18 @@ DELETE /notifications/:id
 	]
 }
 ```
+
+### POST   /notifications
+
+```json
+{
+	"id": "5825f293-d96e-4bf7-8484-3ca176e5aae0",
+	"type": "Result",
+	"message": "hello",
+	"timestamp": "2026-06-09T07:37:02.379Z",
+	"read": false
+}
+```
+
+# stage 2
+
